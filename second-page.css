@@ -1,0 +1,131 @@
+*{
+    width:100%;
+    margin: 0;
+    padding: 0;
+  
+}
+.navbar{
+background-color: #6d0b0b;
+color: white;
+display: grid; 
+grid-template-columns: repeat(2,1fr);
+justify-content: center;
+align-items: center;
+height: 80px;
+/* opacity: 0; */
+}
+
+.nav-option{
+    display: flex;
+    list-style:none;
+    color: white;
+    
+    }
+
+.hero-heading{
+padding-left: 110px ;
+}
+ 
+.link a {
+text-decoration:none;
+color: rgb(249, 250, 250);
+font-size: larger;
+}
+
+.link a:hover{
+color: rgb(242, 242, 74);
+}
+
+.project-section{
+    height: 100vh;
+    width: 100%;
+    /* padding: 0 150px; */
+    align-items: center;
+    opacity:1;
+}
+
+.project-heading{
+    font-size: 80px;
+    text-align: center;
+    background-color: #15016b;
+    color: #83d9ec;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: url("./image/technology.jpg");
+    background-size: cover;
+}
+
+.project-card{
+    /* height: 300px; */
+    position: relative;
+    margin-left: 190px;
+    height: 60vh;
+    width: 60%;
+}
+
+.project-pic{
+    position: absolute;
+} 
+
+.project-card:hover .project-pic{
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    /* opacity: 0.1; */
+}
+   
+ .project-content{
+    opacity: 0;
+    position: relative;
+    padding-top: 30px;
+    /* display: flex;
+    flex-direction: column; */
+ }
+
+.project-card:hover .project-content{
+    opacity: 1;
+    /* filter: blur(10px);
+    -webkit-filter:blur(10px); */
+}
+
+.card-heading{
+    background-color: rgb(164, 227, 228);
+    color: rgb(6, 52, 83);
+    text-align: center;
+    font-size: 40px;
+}
+
+.card-info{
+    color: rgba(93, 241, 228, 0.877);
+    background-color: rgb(1, 5, 33);
+    font-size: 20px;
+}
+
+.card-btn-grp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;    
+    padding-top: 20px;
+}
+
+   .card-btn1{
+    border-style: groove;
+    font-size: 20px;
+   }
+   .card-btn1:hover{
+    color: rgb(250, 6, 6);  
+  }
+   
+    .card-btn2{
+    border-style:dashed;
+    font-size: 20px;
+    }
+
+    .card-btn2:hover{
+        color: rgb(6, 93, 10);  
+      }
